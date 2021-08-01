@@ -1,0 +1,53 @@
+plugins {
+    id 'java'
+    id 'org.jetbrains.intellij' version '0.7.2'
+}
+
+group 'de.ur.mi'
+version '2.0.0'
+
+repositories {
+    mavenCentral()
+}
+
+configurations {
+    // configuration that holds jars to include in the jar
+    extraLibs
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/net.lingala.zip4j/zip4j
+    extraLibs group: 'net.lingala.zip4j', name: 'zip4j', version: '2.7.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    configurations.compile.extendsFrom(configurations.extraLibs)
+}
+
+// See https://github.com/JetBrains/gradle-intellij-plugin/
+intellij {
+    version '202.7660.26'
+    alternativeIdePath 'C:/Program Files/Android/Android Studio'
+    plugins = ['android','com.intellij.java']
+    compileJava {
+        sourceCompatibility = '11'
+        targetCompatibility = '11'
+    }
+}
+
+jar {
+    from {
+        configurations.extraLibs.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
+
+runIde {
+    jbrVersion 'jbrsdk-11_0_9_1b944.50'
+}
+
+patchPluginXml {
+    changeNotes """Finished Version"""
+}
+
+test {
+    useJUnitPlatform()
+}

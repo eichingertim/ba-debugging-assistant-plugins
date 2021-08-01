@@ -1,0 +1,51 @@
+<idea-plugin>
+    <id>de.ur.mi.debugging-assistant-high-interactive</id>
+    <name>Debugging Assistant</name>
+    <vendor email="tim1.eichinger@stud.uni-regensburg.de" url="https://github.com/eichingertim">Github: Tim Eichinger</vendor>
+
+    <description><![CDATA[
+        High Interactive Version of an integrated <b>Debugging Assistant</b>. <br>
+        It should help you gain more experience on the debugging strategy <b>Logging/Print Lining</b> <br><br>
+
+        <h3>Requirements</h3>
+        <ul>
+            <li>Neueste Android Studio Version (4.2.1)</li>
+        </ul>
+    ]]></description>
+
+    <depends>org.jetbrains.android</depends>
+    <depends>com.intellij.modules.androidstudio</depends>
+
+    <projectListeners>
+        <listener class="de.ur.mi.assistant.projectlisteners.ToolWindowListener"
+                  topic="com.intellij.openapi.wm.ex.ToolWindowManagerListener" />
+    </projectListeners>
+
+    <actions>
+
+        <group id="debugging.assistant" text="Debugging Assistant" popup="true" icon="AllIcons.Actions.StartDebugger">
+            <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+            <action id="AddVariableMethodToList"
+                    class="de.ur.mi.assistant.actions.AddLogStatementAction"
+                    text="Log-Statement Hier Erstellen"
+                    description="An der ausgewählten Stelle ein Log-Statement erstellen"
+                    icon="AllIcons.Actions.AddMulticaret">
+                <keyboard-shortcut keymap="$default" first-keystroke="control shift D"/>
+            </action>
+        </group>
+
+
+    </actions>
+
+    <extensions defaultExtensionNs="com.intellij">
+
+        <toolWindow id="Debugging Assistant" secondary="true" icon="AllIcons.Actions.StartDebugger" anchor="right"
+                    factoryClass="de.ur.mi.assistant.DebuggingAssistantFactory"/>
+
+        <projectService
+                serviceImplementation="de.ur.mi.assistant.services.ProjectService" />
+
+
+    </extensions>
+
+</idea-plugin>

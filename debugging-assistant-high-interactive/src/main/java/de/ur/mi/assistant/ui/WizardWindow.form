@@ -1,0 +1,1062 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="de.ur.mi.assistant.ui.WizardWindow">
+  <grid id="18b69" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="1640" height="897"/>
+    </constraints>
+    <properties>
+      <alignmentX value="0.0"/>
+      <alignmentY value="0.0"/>
+      <maximumSize width="2147483647" height="-1"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="27dc6" binding="container" layout-manager="GridLayoutManager" row-count="4" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints border-constraint="North"/>
+        <properties>
+          <alignmentX value="0.5"/>
+          <alignmentY value="0.5"/>
+          <autoscrolls value="true"/>
+        </properties>
+        <border type="empty">
+          <size top="0" left="0" bottom="0" right="0"/>
+        </border>
+        <children>
+          <tabbedpane id="bdced" binding="tabbedPane">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="3" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <alignmentX value="0.5"/>
+              <alignmentY value="0.5"/>
+              <enabled value="false"/>
+              <tabLayoutPolicy value="1"/>
+              <visible value="true"/>
+            </properties>
+            <border type="none">
+              <size top="0" left="0" bottom="0" right="0"/>
+            </border>
+            <children>
+              <grid id="9d47d" binding="tabTagAndMessage" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <tabbedpane title="TAG+Message"/>
+                </constraints>
+                <properties/>
+                <border type="empty">
+                  <size top="8" left="8" bottom="8" right="8"/>
+                </border>
+                <children>
+                  <grid id="cb5cc" binding="tvMoreInfoIndividualMsg" layout-manager="GridLayoutManager" row-count="19" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints border-constraint="North"/>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="34458" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <font size="18" style="1"/>
+                          <text value="&lt;html&gt;TAG&lt;/html&gt;"/>
+                        </properties>
+                      </component>
+                      <vspacer id="c97a2">
+                        <constraints>
+                          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                            <minimum-size width="-1" height="10"/>
+                          </grid>
+                        </constraints>
+                      </vspacer>
+                      <grid id="5bbdd" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="0" left="0" bottom="0" right="0"/>
+                        <constraints>
+                          <grid row="18" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="d223a" class="javax.swing.JButton" binding="btnContinueTag">
+                            <constraints>
+                              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="Weiter"/>
+                            </properties>
+                          </component>
+                          <component id="112b2" class="javax.swing.JButton" binding="btnCancelTag">
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="Abbrechen"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                      <component id="59d3f" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="&lt;html&gt;Vergib hier einen TAG für dein Log-Statement um später in der Logcat danach filtern zu können. Standardmäßig schlägt der Debugging Assistent den Dateinamen vor.&lt;/html&gt;"/>
+                        </properties>
+                      </component>
+                      <grid id="4492f" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="0" left="0" bottom="0" right="0"/>
+                        <constraints>
+                          <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="c5e00" class="javax.swing.JRadioButton" binding="rbTagFileName">
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <selected value="true"/>
+                              <text value="&lt;html&gt;&lt;b&gt;TAG: &lt;/b&gt;&lt;/html&gt;"/>
+                            </properties>
+                          </component>
+                          <hspacer id="fa318">
+                            <constraints>
+                              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="7" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                          </hspacer>
+                          <component id="e32f7" class="javax.swing.JLabel" binding="tvFileName">
+                            <constraints>
+                              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value=""/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                      <grid id="b824e" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="0" left="0" bottom="0" right="0"/>
+                        <constraints>
+                          <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="b0c76" class="javax.swing.JRadioButton" binding="rbTagIndividual">
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="&lt;html&gt;&lt;b&gt;TAG: &lt;/b&gt;&lt;/html&gt;"/>
+                            </properties>
+                          </component>
+                          <component id="96a54" class="javax.swing.JTextField" binding="tfTag">
+                            <constraints>
+                              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="7" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                            </constraints>
+                            <properties/>
+                          </component>
+                        </children>
+                      </grid>
+                      <vspacer id="1c376">
+                        <constraints>
+                          <grid row="11" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                            <minimum-size width="-1" height="10"/>
+                          </grid>
+                        </constraints>
+                      </vspacer>
+                      <component id="48b6" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="13" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <font size="14" style="1"/>
+                          <text value="&lt;html&gt;Individuelle Message&lt;/html&gt;"/>
+                        </properties>
+                      </component>
+                      <component id="15100" class="javax.swing.JTextField" binding="tfMessage">
+                        <constraints>
+                          <grid row="16" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                            <preferred-size width="150" height="-1"/>
+                          </grid>
+                        </constraints>
+                        <properties/>
+                      </component>
+                      <component id="1a7dd" class="javax.swing.JLabel" binding="tvTagErrorMessage">
+                        <constraints>
+                          <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <enabled value="true"/>
+                          <foreground color="-1823437"/>
+                          <text value="&lt;html&gt;Das TAG-Feld darf nicht leer sein. Fülle es aus oder wähle den Dateinamen als TAG aus.&lt;/html&gt;"/>
+                          <visible value="false"/>
+                        </properties>
+                      </component>
+                      <component id="9f2e3" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <font size="16" style="1"/>
+                          <text value="&lt;html&gt;Notwendige Information&lt;/html&gt;"/>
+                        </properties>
+                      </component>
+                      <component id="f2d1a" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="12" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <font size="16" style="1"/>
+                          <text value="&lt;html&gt;Optionale Informationen&lt;/html&gt;"/>
+                        </properties>
+                      </component>
+                      <component id="95d8e" class="javax.swing.JSeparator">
+                        <constraints>
+                          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                      </component>
+                      <component id="8754e" class="javax.swing.JSeparator">
+                        <constraints>
+                          <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                      </component>
+                      <component id="3ca78" class="javax.swing.JSeparator">
+                        <constraints>
+                          <grid row="17" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                      </component>
+                      <component id="8773c" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="14" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="&lt;html&gt;&lt;a href=&quot;&quot;&gt;&lt;u&gt;mehr Informationen&lt;/u&gt;&lt;/a&gt;&lt;/html&gt;"/>
+                        </properties>
+                      </component>
+                      <component id="bf5aa" class="javax.swing.JLabel" binding="tvMoreInfoTagNeccessaryInfo">
+                        <constraints>
+                          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="&lt;html&gt;&lt;a href=&quot;&quot;&gt;&lt;u&gt;mehr Informationen&lt;/u&gt;&lt;/a&gt;&lt;/html&gt;"/>
+                        </properties>
+                      </component>
+                      <vspacer id="bbcb0">
+                        <constraints>
+                          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                            <minimum-size width="-1" height="5"/>
+                          </grid>
+                        </constraints>
+                      </vspacer>
+                      <vspacer id="747e3">
+                        <constraints>
+                          <grid row="15" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                            <minimum-size width="-1" height="5"/>
+                          </grid>
+                        </constraints>
+                      </vspacer>
+                    </children>
+                  </grid>
+                </children>
+              </grid>
+              <grid id="e6c60" binding="tabMethodInfo" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <tabbedpane title="Methodeninformationen"/>
+                </constraints>
+                <properties>
+                  <maximumSize width="-1" height="-1"/>
+                  <minimumSize width="-1" height="-1"/>
+                  <preferredSize width="-1" height="-1"/>
+                </properties>
+                <border type="empty">
+                  <size top="8" left="8" bottom="8" right="8"/>
+                </border>
+                <children>
+                  <grid id="deabf" layout-manager="GridLayoutManager" row-count="19" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints border-constraint="North"/>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="b0823" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <font size="18" style="1"/>
+                          <text value="Methodeninformationen"/>
+                        </properties>
+                      </component>
+                      <grid id="e7db2" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="0" left="0" bottom="0" right="0"/>
+                        <constraints>
+                          <grid row="18" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="1ceba" class="javax.swing.JButton" binding="btnContinueMethodInfo">
+                            <constraints>
+                              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="Weiter"/>
+                            </properties>
+                          </component>
+                          <component id="bf80c" class="javax.swing.JButton" binding="btnCancelMethodInfo">
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="Abbrechen"/>
+                            </properties>
+                          </component>
+                          <component id="f8a04" class="javax.swing.JButton" binding="btnBackMethod">
+                            <constraints>
+                              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="Zurück"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                      <vspacer id="9a09e">
+                        <constraints>
+                          <grid row="13" column="0" row-span="1" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                            <minimum-size width="-1" height="10"/>
+                          </grid>
+                        </constraints>
+                      </vspacer>
+                      <grid id="ba887" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="0" left="0" bottom="0" right="0"/>
+                        <constraints>
+                          <grid row="15" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="c79a0" class="javax.swing.JCheckBox" binding="cbReturnType">
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="&lt;html&gt;&lt;b&gt;Rückgabetyp:&lt;/b&gt; &lt;/html&gt;"/>
+                            </properties>
+                          </component>
+                          <hspacer id="8c481">
+                            <constraints>
+                              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                          </hspacer>
+                          <component id="6a0a" class="javax.swing.JLabel" binding="tvReturnType">
+                            <constraints>
+                              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value=""/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                      <component id="37427" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <enabled value="true"/>
+                          <text value="&lt;html&gt;Wähle hier die Informationen der ausgewählten Methode die du im Logging später verfolgen möchtest.&lt;/html&gt;"/>
+                        </properties>
+                      </component>
+                      <vspacer id="24979">
+                        <constraints>
+                          <grid row="17" column="0" row-span="1" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                            <minimum-size width="-1" height="10"/>
+                          </grid>
+                        </constraints>
+                      </vspacer>
+                      <component id="ec844" class="javax.swing.JLabel" binding="tvErrorMethodNotSelected">
+                        <constraints>
+                          <grid row="4" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <foreground color="-1363398"/>
+                          <text value="&lt;html&gt;Wähle zuerst eine Stelle im Code aus; per &lt;b&gt;Rechts-Klick&lt;/b&gt; -&gt; &lt;b&gt;Debugging Assistant&lt;/b&gt; -&gt; &lt;b&gt;Log-Statement hier erstellen&lt;/b&gt;&lt;/html&gt;"/>
+                          <visible value="false"/>
+                        </properties>
+                      </component>
+                      <component id="c5dce" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="5" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <font size="16" style="1"/>
+                          <text value="&lt;html&gt;Nützliche Informationen&lt;/html&gt;"/>
+                        </properties>
+                      </component>
+                      <grid id="cc745" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="0" left="0" bottom="0" right="0"/>
+                        <constraints>
+                          <grid row="6" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <hspacer id="a313b">
+                            <constraints>
+                              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                          </hspacer>
+                          <component id="3888e" class="javax.swing.JLabel" binding="tvMethodName">
+                            <constraints>
+                              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value=""/>
+                            </properties>
+                          </component>
+                          <component id="5293d" class="javax.swing.JCheckBox" binding="cbMethodName">
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="&lt;html&gt;&lt;b&gt;Methodenname:&lt;/b&gt; &lt;/html&gt;"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                      <grid id="4a22" binding="containerParams" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="3" left="3" bottom="3" right="3"/>
+                        <constraints>
+                          <grid row="11" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="line">
+                          <color color="-1"/>
+                        </border>
+                        <children>
+                          <grid id="db348" binding="containerParamsLeft" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                            <margin top="0" left="0" bottom="0" right="0"/>
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties/>
+                            <border type="none"/>
+                            <children/>
+                          </grid>
+                          <grid id="9605a" binding="containerParamsRight" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                            <margin top="0" left="0" bottom="0" right="0"/>
+                            <constraints>
+                              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties/>
+                            <border type="none"/>
+                            <children/>
+                          </grid>
+                        </children>
+                      </grid>
+                      <component id="793c1" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="14" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <font size="16" style="1"/>
+                          <text value="&lt;html&gt;Optionale Informationen&lt;/html&gt;"/>
+                        </properties>
+                      </component>
+                      <component id="92dff" class="javax.swing.JSeparator">
+                        <constraints>
+                          <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                      </component>
+                      <component id="496a7" class="javax.swing.JSeparator">
+                        <constraints>
+                          <grid row="12" column="0" row-span="1" col-span="2" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                      </component>
+                      <component id="a84b4" class="javax.swing.JSeparator">
+                        <constraints>
+                          <grid row="16" column="0" row-span="1" col-span="2" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                      </component>
+                      <vspacer id="575a4">
+                        <constraints>
+                          <grid row="3" column="0" row-span="1" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                            <minimum-size width="-1" height="10"/>
+                          </grid>
+                        </constraints>
+                      </vspacer>
+                      <component id="517a6" class="javax.swing.JLabel" binding="tvMoreInfoParam">
+                        <constraints>
+                          <grid row="9" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="&lt;html&gt;&lt;a href=&quot;&quot;&gt;&lt;u&gt;mehr Informationen&lt;/u&gt;&lt;/a&gt;&lt;/html&gt;"/>
+                        </properties>
+                      </component>
+                      <component id="b1af4" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="8" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <font size="14" style="1"/>
+                          <text value="Parameter"/>
+                        </properties>
+                      </component>
+                      <vspacer id="192f2">
+                        <constraints>
+                          <grid row="7" column="0" row-span="1" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                            <minimum-size width="-1" height="10"/>
+                          </grid>
+                        </constraints>
+                      </vspacer>
+                      <vspacer id="10e0e">
+                        <constraints>
+                          <grid row="10" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                            <minimum-size width="-1" height="5"/>
+                          </grid>
+                        </constraints>
+                      </vspacer>
+                      <component id="f1b4f" class="javax.swing.JLabel" binding="tvEmptyParameter">
+                        <constraints>
+                          <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="&lt;html&gt;&lt;i&gt;keine Parameter vorhanden&lt;/i&gt;&lt;/html&gt;"/>
+                          <visible value="false"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                </children>
+              </grid>
+              <grid id="13648" binding="tabClassInfo" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <tabbedpane title="Klasseninformationen"/>
+                </constraints>
+                <properties/>
+                <border type="empty">
+                  <size top="8" left="8" bottom="8" right="8"/>
+                </border>
+                <children>
+                  <grid id="a88be" layout-manager="GridLayoutManager" row-count="17" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints border-constraint="North"/>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="e93d7" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <font size="18" style="1"/>
+                          <text value="&lt;html&gt;Klasseninformationen&lt;/html&gt;"/>
+                        </properties>
+                      </component>
+                      <vspacer id="70e07">
+                        <constraints>
+                          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                            <minimum-size width="-1" height="10"/>
+                          </grid>
+                        </constraints>
+                      </vspacer>
+                      <grid id="fb313" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="0" left="0" bottom="0" right="0"/>
+                        <constraints>
+                          <grid row="16" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="3a7be" class="javax.swing.JButton" binding="btnContinueClassInfo">
+                            <constraints>
+                              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="Weiter"/>
+                            </properties>
+                          </component>
+                          <component id="a1803" class="javax.swing.JButton" binding="btnCancelClassInfo">
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="Abbrechen"/>
+                            </properties>
+                          </component>
+                          <component id="6eeca" class="javax.swing.JButton" binding="btnBackClassInfo">
+                            <constraints>
+                              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="Zurück"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                      <component id="237ed" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="&lt;html&gt;Wähle hier die Informationen der Klasse, die du im Logging später verfolgen möchtest.&lt;/html&gt;"/>
+                        </properties>
+                      </component>
+                      <grid id="76839" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="0" left="0" bottom="0" right="0"/>
+                        <constraints>
+                          <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="b8a5d" class="javax.swing.JCheckBox" binding="cbClassName">
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="&lt;html&gt;&lt;b&gt;Klassenname: &lt;/b&gt;&lt;/html&gt;"/>
+                            </properties>
+                          </component>
+                          <hspacer id="5f744">
+                            <constraints>
+                              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                          </hspacer>
+                          <component id="2a51" class="javax.swing.JLabel" binding="tvClassName">
+                            <constraints>
+                              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value=""/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                      <component id="3cf7e" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <font size="14" style="1"/>
+                          <text value="&lt;html&gt;Felder /Variablen der Klasse&lt;/html&gt;"/>
+                        </properties>
+                      </component>
+                      <grid id="f5ac0" binding="containerClassFields" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="4" left="4" bottom="4" right="4"/>
+                        <constraints>
+                          <grid row="13" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="line">
+                          <color color="-1"/>
+                        </border>
+                        <children>
+                          <grid id="ba0f9" binding="containerClassFieldsLeft" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                            <margin top="0" left="0" bottom="0" right="0"/>
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties/>
+                            <border type="none"/>
+                            <children/>
+                          </grid>
+                          <grid id="c0f4" binding="containerClassFieldRight" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                            <margin top="0" left="0" bottom="0" right="0"/>
+                            <constraints>
+                              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties/>
+                            <border type="none"/>
+                            <children/>
+                          </grid>
+                        </children>
+                      </grid>
+                      <component id="1f4dd" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <font size="16" style="1"/>
+                          <text value="&lt;html&gt;Nützliche Informationen&lt;/html&gt;"/>
+                        </properties>
+                      </component>
+                      <vspacer id="98266">
+                        <constraints>
+                          <grid row="15" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                            <minimum-size width="-1" height="10"/>
+                          </grid>
+                        </constraints>
+                      </vspacer>
+                      <component id="b6716" class="javax.swing.JSeparator">
+                        <constraints>
+                          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                      </component>
+                      <component id="6cd6b" class="javax.swing.JSeparator">
+                        <constraints>
+                          <grid row="14" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                      </component>
+                      <vspacer id="e64">
+                        <constraints>
+                          <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                            <minimum-size width="-1" height="10"/>
+                          </grid>
+                        </constraints>
+                      </vspacer>
+                      <component id="ae1e7" class="javax.swing.JLabel" binding="tvMoreInfoClass">
+                        <constraints>
+                          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="&lt;html&gt;&lt;a href=&quot;&quot;&gt;&lt;u&gt;mehr Informationen&lt;/u&gt;&lt;/a&gt;&lt;/html&gt;"/>
+                        </properties>
+                      </component>
+                      <component id="3e5f1" class="javax.swing.JLabel" binding="tvMoreInfoClassFields">
+                        <constraints>
+                          <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="&lt;html&gt;&lt;a href=&quot;&quot;&gt;&lt;u&gt;mehr Informationen&lt;/u&gt;&lt;/a&gt;&lt;/html&gt;"/>
+                        </properties>
+                      </component>
+                      <vspacer id="c63d">
+                        <constraints>
+                          <grid row="11" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                            <minimum-size width="-1" height="4"/>
+                          </grid>
+                        </constraints>
+                      </vspacer>
+                      <vspacer id="67577">
+                        <constraints>
+                          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                            <minimum-size width="-1" height="4"/>
+                          </grid>
+                        </constraints>
+                      </vspacer>
+                      <component id="6c367" class="javax.swing.JLabel" binding="tvEmptyClassFields">
+                        <constraints>
+                          <grid row="12" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="&lt;html&gt;&lt;i&gt;keine Felder/Variablen in dieser Klasse vorhanden&lt;/i&gt;&lt;/html&gt;"/>
+                          <visible value="false"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                </children>
+              </grid>
+              <grid id="f76d3" binding="tabOverview" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <tabbedpane title="Überblick"/>
+                </constraints>
+                <properties/>
+                <border type="empty">
+                  <size top="8" left="8" bottom="8" right="8"/>
+                </border>
+                <children>
+                  <grid id="7ad87" layout-manager="GridLayoutManager" row-count="8" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints border-constraint="North"/>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="c2067" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <font size="16" style="1"/>
+                          <text value="&lt;html&gt;Fertigstellen&lt;/html&gt;"/>
+                        </properties>
+                      </component>
+                      <vspacer id="d9fa3">
+                        <constraints>
+                          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                            <minimum-size width="-1" height="10"/>
+                          </grid>
+                        </constraints>
+                      </vspacer>
+                      <grid id="4cfad" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="0" left="0" bottom="0" right="0"/>
+                        <constraints>
+                          <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="8f82" class="javax.swing.JButton" binding="btnCancelFinish">
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="Abbrechen"/>
+                            </properties>
+                          </component>
+                          <component id="e6304" class="javax.swing.JButton" binding="btnFill">
+                            <constraints>
+                              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="Einfügen"/>
+                            </properties>
+                          </component>
+                          <component id="df4e3" class="javax.swing.JButton" binding="btnBackFinish">
+                            <constraints>
+                              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="Zurück"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                      <vspacer id="7def3">
+                        <constraints>
+                          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                            <minimum-size width="-1" height="10"/>
+                          </grid>
+                        </constraints>
+                      </vspacer>
+                      <component id="2862a" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <font size="14" style="1"/>
+                          <text value="&lt;html&gt;Wo soll das Log-Statement eingefügt werden?&lt;/html&gt;"/>
+                        </properties>
+                      </component>
+                      <component id="ba85c" class="javax.swing.JRadioButton" binding="rbFillAtSelected">
+                        <constraints>
+                          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <selected value="true"/>
+                          <text value="&lt;html&gt;An der ausgewählten Stelle (siehe &lt;b&gt;Zeilennummer der Auswahl&lt;/b&gt;)&lt;/html&gt;)"/>
+                        </properties>
+                      </component>
+                      <component id="e508c" class="javax.swing.JRadioButton" binding="rbFillAtStart">
+                        <constraints>
+                          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Am Anfang der Methode"/>
+                        </properties>
+                      </component>
+                      <component id="7c3a" class="javax.swing.JSeparator">
+                        <constraints>
+                          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                      </component>
+                    </children>
+                  </grid>
+                </children>
+              </grid>
+            </children>
+          </tabbedpane>
+          <grid id="f0536" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none">
+              <size top="0" left="0" bottom="0" right="0"/>
+            </border>
+            <children>
+              <grid id="f1a65" layout-manager="GridLayoutManager" row-count="5" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="8" left="8" bottom="8" right="8"/>
+                <constraints border-constraint="North"/>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="40388" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="&lt;html&gt;Der &lt;b&gt;Log-Statement Wizard&lt;/b&gt; wurde für die folgende Stelle gestartet:&lt;/html&gt;"/>
+                    </properties>
+                  </component>
+                  <grid id="da45f" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="2ea5d" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="&lt;html&gt;&lt;b&gt;Methode:&lt;/b&gt;&lt;/html&gt;"/>
+                        </properties>
+                      </component>
+                      <component id="789b3" class="javax.swing.JLabel" binding="tvGlobalMethodName">
+                        <constraints>
+                          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value=""/>
+                        </properties>
+                      </component>
+                      <hspacer id="1cec5">
+                        <constraints>
+                          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                      </hspacer>
+                    </children>
+                  </grid>
+                  <grid id="2fbd4" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="9de3a" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="&lt;html&gt;&lt;b&gt;Klasse: &lt;/b&gt;&lt;/html&gt;"/>
+                        </properties>
+                      </component>
+                      <component id="a4b39" class="javax.swing.JLabel" binding="tvGlobalClass">
+                        <constraints>
+                          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value=""/>
+                        </properties>
+                      </component>
+                      <hspacer id="9cfc0">
+                        <constraints>
+                          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                      </hspacer>
+                    </children>
+                  </grid>
+                  <grid id="ef5f7" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="eac4" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="&lt;html&gt;&lt;b&gt;Zeilennummer der Auswahl: &lt;/b&gt;&lt;/html&gt;"/>
+                        </properties>
+                      </component>
+                      <component id="4ee8f" class="javax.swing.JLabel" binding="tvGlobalLineNumber">
+                        <constraints>
+                          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value=""/>
+                        </properties>
+                      </component>
+                      <hspacer id="db5cb">
+                        <constraints>
+                          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                      </hspacer>
+                    </children>
+                  </grid>
+                  <component id="54997" class="javax.swing.JSeparator">
+                    <constraints>
+                      <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+          <grid id="c008c" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="8" bottom="0" right="0"/>
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none">
+              <size top="0" left="0" bottom="0" right="0"/>
+            </border>
+            <children>
+              <component id="a638b" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font size="14"/>
+                  <text value="&lt;html&gt;&lt;b&gt;Log-Statement Preview:&lt;/b&gt; &lt;/html&gt;"/>
+                </properties>
+              </component>
+              <component id="44031" class="javax.swing.JLabel" binding="tvLogPreview">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="1" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Consolas" size="12" style="2"/>
+                  <horizontalTextPosition value="2"/>
+                  <text value="Label"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="dff11" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="8" left="8" bottom="8" right="8"/>
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="f6d7f" class="javax.swing.JLabel" binding="tvSteps">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font size="16" style="1"/>
+                  <text value="Schritt 1 von 4"/>
+                </properties>
+              </component>
+              <component id="21b15" class="javax.swing.JProgressBar" binding="pbSteps">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <maximum value="4"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
